@@ -147,6 +147,6 @@ int main(){
   cout << ol;
   // ol.print();
 
-  cout <<" END TESTING!" << endl;
+  cout <<" END TESTING LINKED LIST !" << endl;
   return 0;
 }
