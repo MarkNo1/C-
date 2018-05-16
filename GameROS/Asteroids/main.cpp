@@ -1,8 +1,15 @@
 #include <time.h>
 #include <list>
-#include "lib/classes.h"
-#include "lib/helping_functions.h"
+#include "lib/Animation.h"
+#include "lib/AnimationCoolDown.h"
+#include "lib/Asteroid.h"
+#include "lib/Bomb.h"
+#include "lib/Bullet.h"
+#include "lib/Player.h"
+#include "lib/Entity.h"
+
 #include "lib/global.h"
+#include "lib/helping_functions.h"
 
 #include <iostream>
 
@@ -19,7 +26,7 @@ int main()
   t2.loadFromFile("images/background.jpg");
   t3.loadFromFile("images/explosions/type_C.png");
   t4.loadFromFile("images/rock.png");
-  t5.loadFromFile("images/fire_blue.png");
+  t5.loadFromFile("images/fire_red.png");
   t6.loadFromFile("images/rock_small.png");
   t7.loadFromFile("images/explosions/type_B.png");
   t8.loadFromFile("images/explosions/type_D.png");
@@ -41,17 +48,17 @@ int main()
   Animation sPlayer_tilt_left(t1, 0, 0, 40, 40, 1, 0);
   Animation sPlayer_tilt_right_go(t1, 80, 40, 40, 40, 1, 0);
   Animation sPlayer_tilt_left_go(t1, 0, 40, 40, 40, 1, 0);
-  Animation sBomb(t8, 0, 0, 256, 256, 19, 1);
-  Animation sCoolDown(t9, 0, 0, 256, 256, NR_OF_CD_FRAMES, 0);
+  Animation sBomb(t8, 40, 40, 256, 256, 19, 1);
+  Animation sCoolDown(t9, 40, 40, 256, 256, NR_OF_CD_FRAMES, 0);
 
   spawnAsteroids(0, sRock);
 
-  player *p = new player();
+  player *p = new player(WIDTH,HEIGHT);
   p->set_state(200, 200, 0, 20);
   p->set_animation(sPlayer);
   Game::getInstance()->getEntities()->push_back(p);
 
-  coolDownAnimation *c = new coolDownAnimation(100, 100);
+  AnimationCoolDown *c = new AnimationCoolDown(100, 100);
   c->set_animation(sCoolDown);
 
   /////main loop/////
@@ -66,7 +73,7 @@ int main()
       if (event.type == Event::KeyPressed)
         if (event.key.code == Keyboard::Space)
         {
-          bullet *b = new bullet();
+          bullet *b = new bullet(WIDTH,HEIGHT);
           b->set_state(p->x, p->y, p->angle, 10);
           b->set_animation(sBullet);
           Game::getInstance()->getEntities()->push_back(b);

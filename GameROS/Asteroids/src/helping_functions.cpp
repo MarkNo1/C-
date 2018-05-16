@@ -34,6 +34,7 @@ void randomlySpawnAsteroid(Animation sRock, Animation sRock_small)
 void updateEntitiesAndDeleteTheDead()
 {
   auto entities = Game::getInstance()->getEntities();
+
   for (auto i = entities->begin(); i != entities->end();)
   {
     Entity *e = *i;
@@ -51,7 +52,7 @@ void updateEntitiesAndDeleteTheDead()
   }
 }
 
-void drawEverythingOn(sf::Sprite background, coolDownAnimation *c)
+void drawEverythingOn(sf::Sprite background, AnimationCoolDown *c)
 {
   sf::RenderWindow *appPtr = Game::getInstance()->getApp();
   appPtr->draw(background);
@@ -75,6 +76,7 @@ void spawnAsteroids(int number, Animation sRock)
 {
   int W = Game::getInstance()->getWidth();
   int H = Game::getInstance()->getHeight();
+
   for (int i = 0; i < number; i++)
   {
     asteroid *a = new asteroid();

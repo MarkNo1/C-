@@ -180,7 +180,7 @@ void player::update()
     dy *= 0.99;
   }
 
-  //sprite.setTextureRect(frames[(int)frameNumber]);
+//  sprite.setTextureRect(frames[(int)frameNumber]);
 
   int maxSpeed = 15;
   float speed = sqrt(dx * dx + dy * dy);
