@@ -48,10 +48,10 @@ RM = /home/jrebocho/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jrebocho/github/C-/GameROS/Asteroids-working
+CMAKE_SOURCE_DIR = /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug/CMakeFiles /home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Asteroids_working
+# Target rules for targets named Asteroids_Multiplayer
 
 # Build rule for target.
-Asteroids_working: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Asteroids_working
-.PHONY : Asteroids_working
+Asteroids_Multiplayer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Asteroids_Multiplayer
+.PHONY : Asteroids_Multiplayer
 
 # fast build rule for target.
-Asteroids_working/fast:
-	$(MAKE) -f CMakeFiles/Asteroids_working.dir/build.make CMakeFiles/Asteroids_working.dir/build
-.PHONY : Asteroids_working/fast
+Asteroids_Multiplayer/fast:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/build
+.PHONY : Asteroids_Multiplayer/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Asteroids_working.dir/build.make CMakeFiles/Asteroids_working.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Asteroids_working.dir/build.make CMakeFiles/Asteroids_working.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,8 +147,116 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Asteroids_working.dir/build.make CMakeFiles/Asteroids_working.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/Asteroid.o: src/Asteroid.cpp.o
+
+.PHONY : src/Asteroid.o
+
+# target to build an object file
+src/Asteroid.cpp.o:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Asteroid.cpp.o
+.PHONY : src/Asteroid.cpp.o
+
+src/Asteroid.i: src/Asteroid.cpp.i
+
+.PHONY : src/Asteroid.i
+
+# target to preprocess a source file
+src/Asteroid.cpp.i:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Asteroid.cpp.i
+.PHONY : src/Asteroid.cpp.i
+
+src/Asteroid.s: src/Asteroid.cpp.s
+
+.PHONY : src/Asteroid.s
+
+# target to generate assembly for a file
+src/Asteroid.cpp.s:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Asteroid.cpp.s
+.PHONY : src/Asteroid.cpp.s
+
+src/Bomb.o: src/Bomb.cpp.o
+
+.PHONY : src/Bomb.o
+
+# target to build an object file
+src/Bomb.cpp.o:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Bomb.cpp.o
+.PHONY : src/Bomb.cpp.o
+
+src/Bomb.i: src/Bomb.cpp.i
+
+.PHONY : src/Bomb.i
+
+# target to preprocess a source file
+src/Bomb.cpp.i:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Bomb.cpp.i
+.PHONY : src/Bomb.cpp.i
+
+src/Bomb.s: src/Bomb.cpp.s
+
+.PHONY : src/Bomb.s
+
+# target to generate assembly for a file
+src/Bomb.cpp.s:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Bomb.cpp.s
+.PHONY : src/Bomb.cpp.s
+
+src/Bullet.o: src/Bullet.cpp.o
+
+.PHONY : src/Bullet.o
+
+# target to build an object file
+src/Bullet.cpp.o:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Bullet.cpp.o
+.PHONY : src/Bullet.cpp.o
+
+src/Bullet.i: src/Bullet.cpp.i
+
+.PHONY : src/Bullet.i
+
+# target to preprocess a source file
+src/Bullet.cpp.i:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Bullet.cpp.i
+.PHONY : src/Bullet.cpp.i
+
+src/Bullet.s: src/Bullet.cpp.s
+
+.PHONY : src/Bullet.s
+
+# target to generate assembly for a file
+src/Bullet.cpp.s:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Bullet.cpp.s
+.PHONY : src/Bullet.cpp.s
+
+src/Player.o: src/Player.cpp.o
+
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
 
 src/classes.o: src/classes.cpp.o
 
@@ -156,7 +264,7 @@ src/classes.o: src/classes.cpp.o
 
 # target to build an object file
 src/classes.cpp.o:
-	$(MAKE) -f CMakeFiles/Asteroids_working.dir/build.make CMakeFiles/Asteroids_working.dir/src/classes.cpp.o
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/classes.cpp.o
 .PHONY : src/classes.cpp.o
 
 src/classes.i: src/classes.cpp.i
@@ -165,7 +273,7 @@ src/classes.i: src/classes.cpp.i
 
 # target to preprocess a source file
 src/classes.cpp.i:
-	$(MAKE) -f CMakeFiles/Asteroids_working.dir/build.make CMakeFiles/Asteroids_working.dir/src/classes.cpp.i
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/classes.cpp.i
 .PHONY : src/classes.cpp.i
 
 src/classes.s: src/classes.cpp.s
@@ -174,7 +282,7 @@ src/classes.s: src/classes.cpp.s
 
 # target to generate assembly for a file
 src/classes.cpp.s:
-	$(MAKE) -f CMakeFiles/Asteroids_working.dir/build.make CMakeFiles/Asteroids_working.dir/src/classes.cpp.s
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/classes.cpp.s
 .PHONY : src/classes.cpp.s
 
 src/helping_functions.o: src/helping_functions.cpp.o
@@ -183,7 +291,7 @@ src/helping_functions.o: src/helping_functions.cpp.o
 
 # target to build an object file
 src/helping_functions.cpp.o:
-	$(MAKE) -f CMakeFiles/Asteroids_working.dir/build.make CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.o
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/helping_functions.cpp.o
 .PHONY : src/helping_functions.cpp.o
 
 src/helping_functions.i: src/helping_functions.cpp.i
@@ -192,7 +300,7 @@ src/helping_functions.i: src/helping_functions.cpp.i
 
 # target to preprocess a source file
 src/helping_functions.cpp.i:
-	$(MAKE) -f CMakeFiles/Asteroids_working.dir/build.make CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.i
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/helping_functions.cpp.i
 .PHONY : src/helping_functions.cpp.i
 
 src/helping_functions.s: src/helping_functions.cpp.s
@@ -201,7 +309,7 @@ src/helping_functions.s: src/helping_functions.cpp.s
 
 # target to generate assembly for a file
 src/helping_functions.cpp.s:
-	$(MAKE) -f CMakeFiles/Asteroids_working.dir/build.make CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.s
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/helping_functions.cpp.s
 .PHONY : src/helping_functions.cpp.s
 
 # Help Target
@@ -212,10 +320,22 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Asteroids_working"
+	@echo "... Asteroids_Multiplayer"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Asteroid.o"
+	@echo "... src/Asteroid.i"
+	@echo "... src/Asteroid.s"
+	@echo "... src/Bomb.o"
+	@echo "... src/Bomb.i"
+	@echo "... src/Bomb.s"
+	@echo "... src/Bullet.o"
+	@echo "... src/Bullet.i"
+	@echo "... src/Bullet.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
 	@echo "... src/classes.o"
 	@echo "... src/classes.i"
 	@echo "... src/classes.s"

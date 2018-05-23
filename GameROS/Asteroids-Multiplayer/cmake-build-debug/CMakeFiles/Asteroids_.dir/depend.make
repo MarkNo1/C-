@@ -1,2 +1,2 @@
-# Empty dependencies file for Asteroids_working.
+# Empty dependencies file for Asteroids_.
 # This may be replaced when dependencies are built.

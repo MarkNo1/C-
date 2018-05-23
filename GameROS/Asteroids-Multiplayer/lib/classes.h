@@ -34,26 +34,6 @@ public:
   virtual ~Entity();
 };
 
-class asteroid : public Entity
-{
-public:
-  asteroid();
-  void update();
-};
-
-class bullet : public Entity
-{
-public:
-  bullet();
-  void update();
-};
-
-class bomb : public Entity
-{
-public:
-  bomb();
-  void update();
-};
 
 class player : public Entity
 {

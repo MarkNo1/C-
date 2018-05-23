@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="Asteroids_working"/>
+		<Option title="Asteroids_Multiplayer"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -88,7 +88,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/lib/Asteroid.h">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/lib/Bomb.h">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/lib/Bullet.h">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/lib/Player.h">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
 		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/main.cpp">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Asteroid.cpp">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Bomb.cpp">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Bullet.cpp">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Player.cpp">
 			<Option target="Asteroids_Multiplayer"/>
 		</Unit>
 		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/classes.cpp">

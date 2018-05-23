@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Asteroids_.dir/src/classes.cpp.o CMakeFiles/Asteroids_.dir/src/helping_functions.cpp.o CMakeFiles/Asteroids_.dir/main.cpp.o  -o Asteroids_ 

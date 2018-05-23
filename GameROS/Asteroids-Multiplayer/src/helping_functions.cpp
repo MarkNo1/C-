@@ -3,8 +3,6 @@
 
 #include "../lib/helping_functions.h"
 
-#include <iostream>
-
 void removeFinishedExplosions()
 {
   auto entities = *(Game::getInstance()->getEntities());
@@ -19,7 +17,7 @@ void randomlySpawnAsteroid(Animation sRock, Animation sRock_small)
   if (rand() % 150 == 0)
   {
     int H = Game::getInstance()->getHeight();
-    asteroid *a = new asteroid();
+    Asteroid *a = new Asteroid();
     a->set_state(0, rand() % H, rand() % 360, 25);
 
     if (rand() % 10 < 8)
@@ -77,7 +75,7 @@ void spawnAsteroids(int number, Animation sRock)
   int H = Game::getInstance()->getHeight();
   for (int i = 0; i < number; i++)
   {
-    asteroid *a = new asteroid();
+    Asteroid *a = new Asteroid();
     a->set_state(rand() % W, rand() % H, rand() % 360, 25);
     a->set_animation(sRock);
     Game::getInstance()->getEntities()->push_back(a);

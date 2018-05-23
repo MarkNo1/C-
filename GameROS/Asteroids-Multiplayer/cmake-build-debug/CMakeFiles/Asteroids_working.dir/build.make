@@ -43,10 +43,10 @@ RM = /home/jrebocho/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jrebocho/github/C-/GameROS/Asteroids-working
+CMAKE_SOURCE_DIR = /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Asteroids_working.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Asteroids_working.dir/flags.make
 
 CMakeFiles/Asteroids_working.dir/src/classes.cpp.o: CMakeFiles/Asteroids_working.dir/flags.make
 CMakeFiles/Asteroids_working.dir/src/classes.cpp.o: ../src/classes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Asteroids_working.dir/src/classes.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids_working.dir/src/classes.cpp.o -c /home/jrebocho/github/C-/GameROS/Asteroids-working/src/classes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Asteroids_working.dir/src/classes.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids_working.dir/src/classes.cpp.o -c /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/classes.cpp
 
 CMakeFiles/Asteroids_working.dir/src/classes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids_working.dir/src/classes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jrebocho/github/C-/GameROS/Asteroids-working/src/classes.cpp > CMakeFiles/Asteroids_working.dir/src/classes.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/classes.cpp > CMakeFiles/Asteroids_working.dir/src/classes.cpp.i
 
 CMakeFiles/Asteroids_working.dir/src/classes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids_working.dir/src/classes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jrebocho/github/C-/GameROS/Asteroids-working/src/classes.cpp -o CMakeFiles/Asteroids_working.dir/src/classes.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/classes.cpp -o CMakeFiles/Asteroids_working.dir/src/classes.cpp.s
 
 CMakeFiles/Asteroids_working.dir/src/classes.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Asteroids_working.dir/src/classes.cpp.o.provides.build: CMakeFiles/As
 
 CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.o: CMakeFiles/Asteroids_working.dir/flags.make
 CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.o: ../src/helping_functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.o -c /home/jrebocho/github/C-/GameROS/Asteroids-working/src/helping_functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.o -c /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/helping_functions.cpp
 
 CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jrebocho/github/C-/GameROS/Asteroids-working/src/helping_functions.cpp > CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/helping_functions.cpp > CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.i
 
 CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jrebocho/github/C-/GameROS/Asteroids-working/src/helping_functions.cpp -o CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/helping_functions.cpp -o CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.s
 
 CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.o.provides.build: CMa
 
 CMakeFiles/Asteroids_working.dir/main.cpp.o: CMakeFiles/Asteroids_working.dir/flags.make
 CMakeFiles/Asteroids_working.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Asteroids_working.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids_working.dir/main.cpp.o -c /home/jrebocho/github/C-/GameROS/Asteroids-working/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Asteroids_working.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids_working.dir/main.cpp.o -c /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/main.cpp
 
 CMakeFiles/Asteroids_working.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids_working.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jrebocho/github/C-/GameROS/Asteroids-working/main.cpp > CMakeFiles/Asteroids_working.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/main.cpp > CMakeFiles/Asteroids_working.dir/main.cpp.i
 
 CMakeFiles/Asteroids_working.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids_working.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jrebocho/github/C-/GameROS/Asteroids-working/main.cpp -o CMakeFiles/Asteroids_working.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/main.cpp -o CMakeFiles/Asteroids_working.dir/main.cpp.s
 
 CMakeFiles/Asteroids_working.dir/main.cpp.o.requires:
 
@@ -143,7 +143,7 @@ Asteroids_working: CMakeFiles/Asteroids_working.dir/src/helping_functions.cpp.o
 Asteroids_working: CMakeFiles/Asteroids_working.dir/main.cpp.o
 Asteroids_working: CMakeFiles/Asteroids_working.dir/build.make
 Asteroids_working: CMakeFiles/Asteroids_working.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Asteroids_working"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Asteroids_working"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Asteroids_working.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/Asteroids_working.dir/clean:
 .PHONY : CMakeFiles/Asteroids_working.dir/clean
 
 CMakeFiles/Asteroids_working.dir/depend:
-	cd /home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jrebocho/github/C-/GameROS/Asteroids-working /home/jrebocho/github/C-/GameROS/Asteroids-working /home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug /home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug /home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug/CMakeFiles/Asteroids_working.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles/Asteroids_working.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Asteroids_working.dir/depend
 

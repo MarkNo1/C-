@@ -6,6 +6,7 @@
 #include "../lib/classes.h"
 
 #include "iostream"
+
 using namespace std;
 
 Game *Game::instance_ = NULL;
@@ -98,61 +99,6 @@ void coolDownAnimation::draw(sf::RenderWindow &app)
 {
   anim.sprite.setPosition(this->x, this->y);
   app.draw(anim.sprite);
-}
-
-asteroid::asteroid()
-{
-  //do {
-  dx = rand() % 8 - 4;
-  dy = rand() % 8 - 4;
-  //} while (dx == 0 && dy == 0);
-
-  name = "asteroid";
-}
-
-void asteroid::update()
-{
-  x += dx;
-  y += dy;
-
-  int W = Game::getInstance()->getWidth();
-  int H = Game::getInstance()->getHeight();
-
-  if (x > W)
-    x = 0;
-  if (x < 0)
-    x = W;
-  if (y > H)
-    y = 0;
-  if (y < 0)
-    y = H;
-}
-
-bullet::bullet()
-{
-  name = "bullet";
-}
-
-void bullet::update()
-{
-  dx = cos(angle * DEGTORAD) * 6;
-  dy = sin(angle * DEGTORAD) * 6;
-  x += dx;
-  y += dy;
-
-  if (x > Game::getInstance()->getWidth() || x < 0 ||
-      y > Game::getInstance()->getHeight() || y < 0)
-    life = 0;
-}
-
-bomb::bomb()
-{
-  name = "bomb";
-}
-
-void bomb::update()
-{
-  R += 10;
 }
 
 player::player()

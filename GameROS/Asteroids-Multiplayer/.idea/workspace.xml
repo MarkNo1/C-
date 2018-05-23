@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Asteroids_working" targetName="Asteroids_working" />
+      <config projectName="Asteroids_Multiplayer" targetName="Asteroids_Multiplayer" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -22,24 +22,24 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helping_functions.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/helping_functions.cpp">
+      <file leaf-file-name="helping_functions.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/helping_functions.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="73" column="30" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="30" />
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#57#77#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,8 +47,8 @@
       <file leaf-file-name="classes.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3300">
-              <caret line="220" column="30" lean-forward="true" selection-start-line="220" selection-start-column="30" selection-end-line="220" selection-end-column="30" />
+            <state relative-caret-position="345">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding>
                 <element signature="e#43#71#0" expanded="true" />
               </folding>
@@ -59,8 +59,8 @@
       <file leaf-file-name="classes.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/classes.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="91" column="43" lean-forward="true" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+            <state relative-caret-position="-330">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding>
                 <element signature="e#39#56#0" expanded="true" />
               </folding>
@@ -68,20 +68,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compile">
+      <file leaf-file-name="Bomb.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bomb.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="60">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <file leaf-file-name="Player.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Player.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/Player.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bomb.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/Bomb.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Asteroid.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/Asteroid.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -92,15 +128,32 @@
     <findStrings>
       <find>prite</find>
       <find>Gam</find>
+      <find>aster</find>
+      <find>bullet</find>
+      <find>player</find>
+      <find>dx</find>
+      <find>bomb</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/compile" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/Asteroid.h" />
+        <option value="$PROJECT_DIR$/lib/Asteroid.h" />
+        <option value="$PROJECT_DIR$/src/helping_functions.cpp" />
+        <option value="$PROJECT_DIR$/src/Asteroid.cpp" />
+        <option value="$PROJECT_DIR$/lib/Bullet.h" />
+        <option value="$PROJECT_DIR$/src/Bullet.cpp" />
+        <option value="$PROJECT_DIR$/src/Bomb.cpp" />
+        <option value="$PROJECT_DIR$/lib/helping_functions.h" />
+        <option value="$PROJECT_DIR$/lib/Bomb.h" />
+        <option value="$PROJECT_DIR$/compile" />
+        <option value="$PROJECT_DIR$/lib/Player.h" />
         <option value="$PROJECT_DIR$/src/classes.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/lib/classes.h" />
+        <option value="$PROJECT_DIR$/src/Player.cpp" />
       </list>
     </option>
   </component>
@@ -116,9 +169,9 @@
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2143" />
-    <option name="y" value="103" />
+    <option name="y" value="-4" />
     <option name="width" value="1396" />
-    <option name="height" value="854" />
+    <option name="height" value="882" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -130,17 +183,17 @@
         <subPane>
           <expand>
             <path>
-              <item name="Asteroids_working" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Asteroids-working" type="462c0819:PsiDirectoryNode" />
+              <item name="Asteroids_Multiplayer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Asteroids-Multiplayer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Asteroids_working" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Asteroids-working" type="462c0819:PsiDirectoryNode" />
+              <item name="Asteroids_Multiplayer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Asteroids-Multiplayer" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Asteroids_working" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Asteroids-working" type="462c0819:PsiDirectoryNode" />
+              <item name="Asteroids_Multiplayer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Asteroids-Multiplayer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -154,6 +207,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -166,12 +224,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Asteroids_working">
-    <configuration name="Asteroids_working" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Asteroids_working" TARGET_NAME="Asteroids_working" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Asteroids_working" RUN_TARGET_NAME="Asteroids_working" />
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Asteroids_working" RUN_TARGET_NAME="Asteroids_working" EXPLICIT_BUILD_TARGET_NAME="all" />
+  <component name="RunManager" selected="Application.Asteroids_Multiplayer">
+    <configuration name="Asteroids_Multiplayer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Asteroids_Multiplayer" TARGET_NAME="Asteroids_Multiplayer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Asteroids_Multiplayer" RUN_TARGET_NAME="Asteroids_Multiplayer" />
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Asteroids_Multiplayer" RUN_TARGET_NAME="Asteroids_working" EXPLICIT_BUILD_TARGET_NAME="all" />
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.Asteroids_working" />
+      <item itemvalue="Application.Asteroids_Multiplayer" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -185,31 +243,31 @@
       <option name="presentableId" value="Default" />
       <updated>1526995377936</updated>
       <workItem from="1526995379292" duration="6773000" />
+      <workItem from="1527079949777" duration="6690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6773000" />
+    <option name="totallyTimeSpent" value="13463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18814017" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14555256" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32924336" />
-      <window_info anchor="bottom" id="CMake" weight="0.32924336" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32924336" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32924336" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32924336" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32924336" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32924336" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -222,37 +280,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/include/SFML/Graphics/Texture.hpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding>
-            <element signature="e#1290#1325#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1860">
+          <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/src/helping_functions.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/classes.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="91" column="43" lean-forward="true" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
-          <folding>
-            <element signature="e#39#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1095">
+          <caret line="73" column="30" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -266,20 +304,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/classes.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="43" lean-forward="true" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+          <folding>
+            <element signature="e#39#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/SFML/Graphics/Texture.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/helping_functions.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="73" column="30" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="30" />
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Asteroid.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="e#43#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Bullet.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bullet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#43#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/helping_functions.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#57#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Asteroid.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bomb.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Bomb.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#43#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/classes.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#39#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Player.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>

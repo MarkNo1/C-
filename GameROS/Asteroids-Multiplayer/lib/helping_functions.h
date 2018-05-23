@@ -2,6 +2,9 @@
 #define HELPING_FUNCTIONS_H
 
 #include "classes.h"
+#include "../lib/Asteroid.h"
+#include "../lib/Bullet.h"
+#include "../lib/Bomb.h"
 
 void randomlySpawnAsteroid(Animation, Animation);
 void removeFinishedExplosions();

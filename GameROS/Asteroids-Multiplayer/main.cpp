@@ -3,6 +3,9 @@
 #include "lib/classes.h"
 #include "lib/helping_functions.h"
 #include "lib/global.h"
+#include "lib/Asteroid.h"
+#include "lib/Bullet.h"
+#include "lib/Bomb.h"
 
 #include <iostream>
 
@@ -84,7 +87,7 @@ int main()
       if (event.type == Event::KeyPressed)
         if (event.key.code == Keyboard::Space)
         {
-          bullet *b = new bullet();
+          Bullet *b = new Bullet();
           b->set_state(p->x, p->y, p->angle, 10);
           b->set_animation(sBullet);
           Game::getInstance()->getEntities()->push_back(b);
@@ -104,7 +107,7 @@ int main()
             //2nd player bullets
         else if (event.key.code == Keyboard::O)
         {
-            bullet *b = new bullet();
+            Bullet *b = new Bullet();
             b->set_state(p2->x, p2->y, p2->angle, 10);
             b->set_animation(sBullet2);
             Game::getInstance()->getEntities()->push_back(b);
@@ -190,7 +193,7 @@ int main()
             if (a->R != 15)
               for (int i = 0; i < 2; i++)
               {
-                Entity *e = new asteroid();
+                Entity *e = new Asteroid();
                 e->set_state(a->x, a->y, rand() % 360, 15);
                 e->set_animation(sRock_small);
                 Game::getInstance()->getEntities()->push_back(e);
