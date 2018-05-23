@@ -1,0 +1,4 @@
+/home/jrebocho/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jrebocho/github/C-/GameROS/Asteroids-working
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jrebocho/github/C-/GameROS/Asteroids-working/cmake-build-debug
