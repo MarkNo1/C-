@@ -5,6 +5,7 @@
 #include "../lib/AnimationCoolDown.h"
 #include "../lib/Player.h"
 #include "../lib/Game.h"
+#include "../lib/global.h"
 
 AnimationCoolDown::AnimationCoolDown(float x, float y)
 {
@@ -16,7 +17,7 @@ AnimationCoolDown::AnimationCoolDown(float x, float y)
 
 void AnimationCoolDown::update()
 {
-  anim.sprite.setPosition(x, y);
+  animation.sprite.setPosition(x, y);
 
   int coolDown = static_cast<Player *>(Game::getInstance()->getEntities()->front())->bombCoolDown;
   int backwardsIndex = coolDown * (float)NR_OF_CD_FRAMES / (float)FULL_COOLDOWN;

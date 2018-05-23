@@ -4,7 +4,7 @@
 
 #include "../lib/Asteroid.h"
 
-Asteroid::Asteroid(int W, int H): width(W), height(H)
+Asteroid::Asteroid()
 {
   //do {
   dx = rand() % 8 - 4;

@@ -15,8 +15,9 @@ public:
     bool brake;
     std::string tilting;
     int bombCoolDown;
+    int bulletCoolDown;
 
-    Player(int W, int H);
+    Player();
     void update();
 
 private:

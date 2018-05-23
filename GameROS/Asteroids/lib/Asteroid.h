@@ -5,12 +5,13 @@
 #ifndef ASTEROIDS_ASTEROID_H
 #define ASTEROIDS_ASTEROID_H
 
+#include <SFML/Graphics.hpp>
 #include "Entity.h"
 
 class Asteroid : public Entity
 {
 public:
-    Asteroid(int W, int H);
+    Asteroid();
     void update();
 private:
     int width;

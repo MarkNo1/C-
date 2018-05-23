@@ -11,7 +11,7 @@
 class Bomb : public Entity
 {
 public:
-    bomb();
+    Bomb();
     void update();
 };
 

@@ -10,7 +10,7 @@ void removeFinishedExplosions()
   auto entities = *(Game::getInstance()->getEntities());
   for (auto e : entities)
     if (e->name == "explosion" || e->name == "bomb")
-      if (e->anim.isEnd())
+      if (e->animation.isEnd())
         e->life = false;
 }
 
@@ -19,7 +19,7 @@ void randomlySpawnAsteroid(Animation sRock, Animation sRock_small)
   if (rand() % 150 == 0)
   {
     int H = Game::getInstance()->getHeight();
-    asteroid *a = new asteroid();
+    Asteroid *a = new Asteroid();
     a->set_state(0, rand() % H, rand() % 360, 25);
 
     if (rand() % 10 < 8)
@@ -40,7 +40,7 @@ void updateEntitiesAndDeleteTheDead()
     Entity *e = *i;
 
     e->update();
-    e->anim.update();
+    e->animation.update();
 
     if (e->life == false)
     {
@@ -79,7 +79,7 @@ void spawnAsteroids(int number, Animation sRock)
 
   for (int i = 0; i < number; i++)
   {
-    asteroid *a = new asteroid();
+    Asteroid *a = new Asteroid();
     a->set_state(rand() % W, rand() % H, rand() % 360, 25);
     a->set_animation(sRock);
     Game::getInstance()->getEntities()->push_back(a);

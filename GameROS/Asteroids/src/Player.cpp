@@ -4,8 +4,9 @@
 
 #include "../lib/Player.h"
 #include "../lib/global.h"
+#include "../lib/Game.h"
 
-Player::Player(int W, int H):widht(W), height(H)
+Player::Player()
 {
   name = "Player";
   tilting = "nope";
@@ -17,6 +18,10 @@ void Player::update()
 {
   if (bombCoolDown > 0)
     bombCoolDown -= 1;
+
+  if (bulletCoolDown > 0)                                                 //ADDED
+    bulletCoolDown -= 1;                                                  //ADDED
+
 
   if (thrust)
   {
@@ -47,8 +52,8 @@ void Player::update()
   x += dx;
   y += dy;
 
-  int W = game->getInstance()->getWidth();
-  int H = game->getInstance()->getHeight();
+  int W = Game::getInstance()->getWidth();
+  int H = Game::getInstance()->getHeight();
 
   if (x > W)
     x = 0;
@@ -57,5 +62,5 @@ void Player::update()
   if (y > H)
     y = 0;
   if (y < 0)
-    y = H
+    y = H;
 }

@@ -7,6 +7,7 @@
 #include "lib/Bullet.h"
 #include "lib/Player.h"
 #include "lib/Entity.h"
+#include "lib/Game.h"
 
 #include "lib/global.h"
 #include "lib/helping_functions.h"
@@ -15,8 +16,11 @@
 
 using namespace sf;
 
+
+
 int main()
 {
+
   srand(time(0));
 
   Game::getInstance()->getApp()->setFramerateLimit(60);
@@ -49,11 +53,11 @@ int main()
   Animation sPlayer_tilt_right_go(t1, 80, 40, 40, 40, 1, 0);
   Animation sPlayer_tilt_left_go(t1, 0, 40, 40, 40, 1, 0);
   Animation sBomb(t8, 40, 40, 256, 256, 19, 1);
-  Animation sCoolDown(t9, 40, 40, 256, 256, NR_OF_CD_FRAMES, 0);
+  Animation sCoolDown(t9, 40, 0, 40, 40, NR_OF_CD_FRAMES, 0);
 
   spawnAsteroids(0, sRock);
 
-  player *p = new player(WIDTH,HEIGHT);
+  Player *p = new Player();
   p->set_state(200, 200, 0, 20);
   p->set_animation(sPlayer);
   Game::getInstance()->getEntities()->push_back(p);
@@ -72,18 +76,19 @@ int main()
 
       if (event.type == Event::KeyPressed)
         if (event.key.code == Keyboard::Space)
-        {
-          bullet *b = new bullet(WIDTH,HEIGHT);
-          b->set_state(p->x, p->y, p->angle, 10);
-          b->set_animation(sBullet);
-          Game::getInstance()->getEntities()->push_back(b);
+            if (p->bulletCoolDown == 0) {                                                   //ADDED
+                p->bulletCoolDown = NR_OF_BULLET_CD_FRAMES;                                  //ADDED
+                Bullet *b = new Bullet(WIDTH,HEIGHT);
+                b->set_state(p->x, p->y, p->angle, 10);
+                b->set_animation(sBullet);
+                Game::getInstance()->getEntities()->push_back(b);
         }
         else if (event.key.code == Keyboard::LControl)
         {
           if (p->bombCoolDown == 0)
           {
             p->bombCoolDown = FULL_COOLDOWN;
-            bomb *b = new bomb();
+            Bomb *b = new Bomb();
             b->set_state(p->x, p->y, 0, 1);
             b->set_animation(sBomb);
             Game::getInstance()->getEntities()->push_back(b);
@@ -138,7 +143,7 @@ int main()
             if (a->R != 15)
               for (int i = 0; i < 2; i++)
               {
-                Entity *e = new asteroid();
+                Entity *e = new Asteroid();
                 e->set_state(a->x, a->y, rand() % 360, 15);
                 e->set_animation(sRock_small);
                 Game::getInstance()->getEntities()->push_back(e);
@@ -170,27 +175,27 @@ int main()
     {
       if (p->tilting == "right")
       {
-        p->anim = sPlayer_tilt_right_go;
+        p->animation = sPlayer_tilt_right_go;
       }
       else if (p->tilting == "left")
       {
-        p->anim = sPlayer_tilt_left_go;
+        p->animation = sPlayer_tilt_left_go;
       }
       else
-        p->anim = sPlayer_go;
+        p->animation = sPlayer_go;
     }
     else
     {
       if (p->tilting == "right")
       {
-        p->anim = sPlayer_tilt_right;
+        p->animation = sPlayer_tilt_right;
       }
       else if (p->tilting == "left")
       {
-        p->anim = sPlayer_tilt_left;
+        p->animation = sPlayer_tilt_left;
       }
       else
-        p->anim = sPlayer;
+        p->animation = sPlayer;
     }
 
     removeFinishedExplosions();

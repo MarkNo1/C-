@@ -2,8 +2,10 @@
 // Created by mark on 16/05/18.
 //
 
+#include "../lib/Animation.h"
+
 // Constructor
-Animation::Animation(){};
+Animation::Animation(){}
 
 // Constructor with parameters
 Animation::Animation(sf::Texture &t, int x, int y, int w, int h, int count, float speed)

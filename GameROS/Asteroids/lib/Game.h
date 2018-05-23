@@ -18,11 +18,13 @@ public:
     int getHeight();
     sf::RenderWindow *getApp();
     std::list<class Entity *> *getEntities();
+    static Game *instance_;
+    Game();
+
 
 private:
     //static std::unique_ptr<Game> instance_;
-    static Game *instance_;
-    Game();
+
     const int W;
     const int H;
     sf::RenderWindow *app;
