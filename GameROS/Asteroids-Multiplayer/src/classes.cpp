@@ -17,8 +17,10 @@ Animation::Animation(sf::Texture &t, int x, int y, int w, int h, int count, floa
   frameNumber = 0;
   this->speed = speed;
 
-  for (int i = 0; i < count; i++)
+  for (int i = 0; i < count; i++){
     frames.push_back(sf::IntRect(x + i * w, y, w, h));
+
+  }
 
   sprite.setTexture(t);
   sprite.setOrigin(w / 2, h / 2);
@@ -62,14 +64,9 @@ void Entity::update(){};
 void Entity::draw(sf::RenderWindow &app)
 {
   anim.sprite.setPosition(x, y);
-  anim.sprite.setRotation(angle + 90);
+  anim.sprite.setRotation(angle+90);
   app.draw(anim.sprite);
-
-  sf::CircleShape circle(R);
-  circle.setFillColor(sf::Color(255, 0, 0, 170));
-  circle.setPosition(x, y);
-  circle.setOrigin(R, R);
-  //app.draw(circle);
+  // app.draw(circle);
 }
 
 Entity::~Entity(){};
@@ -158,15 +155,12 @@ void player::update()
 Game *Game::getInstance()
 {
   if (!instance_)
-  {
     instance_ = (Game *)new Game();
-  }
   return instance_;
 }
 
-Game::Game() : W(1200), H(800)
+Game::Game() : W(800), H(600)
 {
-  cout << "GAME CONSTRUCTER CALLED!!!!!!!!!!!!!!!" << endl;
   app = new sf::RenderWindow(sf::VideoMode(W, H), "Asteroids!");
   entities = new std::list<class Entity *>;
 }

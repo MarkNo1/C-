@@ -14,10 +14,8 @@ using namespace std;
 
 int main()
 {
-  cout << "######################################################################################################" << endl;
-  cout<< "1st point" << endl;
   srand(time(0));
-  Game::getInstance()->getApp()->setFramerateLimit(60);
+  Game::getInstance()->getApp()->setFramerateLimit(100);
 
   sf::Texture t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11;
   t1.loadFromFile("images/spaceship.png");
@@ -67,11 +65,6 @@ int main()
   p->set_animation(sPlayer);
   Game::getInstance()->getEntities()->push_back(p);
 
-    player *p2 = new player();
-    p2->set_state(200, 200, 0, 20);
-    p2->set_animation(sPlayer2);
-    Game::getInstance()->getEntities()->push_back(p2);
-
   coolDownAnimation *c = new coolDownAnimation(100, 100);
   c->set_animation(sCoolDown);
 
@@ -102,15 +95,7 @@ int main()
             b->set_animation(sBomb);
             Game::getInstance()->getEntities()->push_back(b);
           }
-        }
 
-            //2nd player bullets
-        else if (event.key.code == Keyboard::O)
-        {
-            Bullet *b = new Bullet();
-            b->set_state(p2->x, p2->y, p2->angle, 10);
-            b->set_animation(sBullet2);
-            Game::getInstance()->getEntities()->push_back(b);
         }
     }
 
@@ -140,36 +125,6 @@ int main()
       p->brake = true;
     else
       p->brake = false;
-
-
-
-    // CONTROL OF PLAYER 2
-      if (Keyboard::isKeyPressed(Keyboard::D))
-      {
-          p2->angle += 3;
-          p2->tilting = "right";
-      }
-      else if (Keyboard::isKeyPressed(Keyboard::A))
-      {
-          p2->angle -= 3;
-          p2->tilting = "left";
-      }
-      else
-          p2->tilting = "nope";
-
-      if (Keyboard::isKeyPressed(Keyboard::W))
-      {
-          p2->thrust = true;
-      }
-      else
-      {
-          p2->thrust = false;
-      }
-
-      if (Keyboard::isKeyPressed(Keyboard::S))
-          p2->brake = true;
-      else
-          p2->brake = false;
 
 
 
@@ -253,32 +208,20 @@ int main()
 
     // PLAYER 2
 
-      if (p2->thrust)
+      if (p->thrust)
       {
-          if (p2->tilting == "right")
+          if (p->tilting == "right")
           {
-              p2->anim = sPlayer_tilt_right_go2;
+              p->anim = sPlayer_tilt_right_go2;
           }
-          else if (p2->tilting == "left")
+          else if (p->tilting == "left")
           {
-              p2->anim = sPlayer_tilt_left_go2;
+              p->anim = sPlayer_tilt_left_go2;
           }
           else
-              p2->anim = sPlayer_go2;
+              p->anim = sPlayer_go2;
       }
-      else
-      {
-          if (p2->tilting == "right")
-          {
-              p2->anim = sPlayer_tilt_right2;
-          }
-          else if (p2->tilting == "left")
-          {
-              p2->anim = sPlayer_tilt_left2;
-          }
-          else
-              p2->anim = sPlayer2;
-      }
+
 
 
     removeFinishedExplosions();
