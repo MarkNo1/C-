@@ -225,6 +225,54 @@ CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.o.provides: CMakeFiles/Aster
 CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.o.provides.build: CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.o
 
 
+CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o: CMakeFiles/Asteroids_Multiplayer.dir/flags.make
+CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o: ../src/Animation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o -c /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Animation.cpp
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Animation.cpp > CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.i
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Animation.cpp -o CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.s
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o.requires:
+
+.PHONY : CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o.requires
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o.provides: CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o.provides.build
+.PHONY : CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o.provides
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o.provides.build: CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o
+
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o: CMakeFiles/Asteroids_Multiplayer.dir/flags.make
+CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o: ../src/Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o -c /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Entity.cpp
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Entity.cpp > CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.i
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Entity.cpp -o CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.s
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o.requires:
+
+.PHONY : CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o.requires
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o.provides: CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Asteroids_Multiplayer.dir/build.make CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o.provides.build
+.PHONY : CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o.provides
+
+CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o.provides.build: CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o
+
+
 # Object files for target Asteroids_Multiplayer
 Asteroids_Multiplayer_OBJECTS = \
 "CMakeFiles/Asteroids_Multiplayer.dir/src/classes.cpp.o" \
@@ -233,7 +281,9 @@ Asteroids_Multiplayer_OBJECTS = \
 "CMakeFiles/Asteroids_Multiplayer.dir/src/Asteroid.cpp.o" \
 "CMakeFiles/Asteroids_Multiplayer.dir/src/Bullet.cpp.o" \
 "CMakeFiles/Asteroids_Multiplayer.dir/src/Bomb.cpp.o" \
-"CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.o"
+"CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.o" \
+"CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o" \
+"CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o"
 
 # External object files for target Asteroids_Multiplayer
 Asteroids_Multiplayer_EXTERNAL_OBJECTS =
@@ -245,9 +295,11 @@ Asteroids_Multiplayer: CMakeFiles/Asteroids_Multiplayer.dir/src/Asteroid.cpp.o
 Asteroids_Multiplayer: CMakeFiles/Asteroids_Multiplayer.dir/src/Bullet.cpp.o
 Asteroids_Multiplayer: CMakeFiles/Asteroids_Multiplayer.dir/src/Bomb.cpp.o
 Asteroids_Multiplayer: CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.o
+Asteroids_Multiplayer: CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o
+Asteroids_Multiplayer: CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o
 Asteroids_Multiplayer: CMakeFiles/Asteroids_Multiplayer.dir/build.make
 Asteroids_Multiplayer: CMakeFiles/Asteroids_Multiplayer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Asteroids_Multiplayer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Asteroids_Multiplayer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Asteroids_Multiplayer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -262,6 +314,8 @@ CMakeFiles/Asteroids_Multiplayer.dir/requires: CMakeFiles/Asteroids_Multiplayer.
 CMakeFiles/Asteroids_Multiplayer.dir/requires: CMakeFiles/Asteroids_Multiplayer.dir/src/Bullet.cpp.o.requires
 CMakeFiles/Asteroids_Multiplayer.dir/requires: CMakeFiles/Asteroids_Multiplayer.dir/src/Bomb.cpp.o.requires
 CMakeFiles/Asteroids_Multiplayer.dir/requires: CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.o.requires
+CMakeFiles/Asteroids_Multiplayer.dir/requires: CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o.requires
+CMakeFiles/Asteroids_Multiplayer.dir/requires: CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o.requires
 
 .PHONY : CMakeFiles/Asteroids_Multiplayer.dir/requires
 

@@ -1,78 +1,13 @@
 #ifndef _CLASSES_CPP
 #define _CLASSES_CPP
 
-#include <SFML/Graphics.hpp>
-#include "../lib/global.h"
 #include "../lib/classes.h"
 
 #include "iostream"
 
 using namespace std;
 
-Game *Game::instance_ = NULL;
-
-Animation::Animation(){};
-Animation::Animation(sf::Texture &t, int x, int y, int w, int h, int count, float speed)
-{
-  frameNumber = 0;
-  this->speed = speed;
-
-  for (int i = 0; i < count; i++)
-    frames.push_back(sf::IntRect(x + i * w, y, w, h));
-
-  sprite.setTexture(t);
-  sprite.setOrigin(w / 2, h / 2);
-  sprite.setTextureRect(frames[0]);
-}
-
-void Animation::update()
-{
-  frameNumber += speed;
-  int n = frames.size();
-  if (frameNumber >= n)
-    frameNumber -= n;
-  sprite.setTextureRect(frames[(int)frameNumber]);
-}
-
-bool Animation::isEnd()
-{
-  return frameNumber + speed >= frames.size();
-}
-
-Entity::Entity()
-{
-  life = 1;
-}
-
-void Entity::set_state(int X, int Y, float Angle, int radius)
-{
-  x = X;
-  y = Y;
-  angle = Angle;
-  R = radius;
-}
-
-void Entity::set_animation(Animation &a)
-{
-  anim = a;
-}
-
-void Entity::update(){};
-
-void Entity::draw(sf::RenderWindow &app)
-{
-  anim.sprite.setPosition(x, y);
-  anim.sprite.setRotation(angle + 90);
-  app.draw(anim.sprite);
-
-  sf::CircleShape circle(R);
-  circle.setFillColor(sf::Color(255, 0, 0, 170));
-  circle.setPosition(x, y);
-  circle.setOrigin(R, R);
-  //app.draw(circle);
-}
-
-Entity::~Entity(){};
+Game *Game::instance_ = NULL;;;;
 
 coolDownAnimation::coolDownAnimation(float x, float y)
 {
@@ -84,7 +19,7 @@ void coolDownAnimation::update()
 {
   anim.sprite.setPosition(x, y);
 
-  int coolDown = static_cast<player *>(Game::getInstance()->getEntities()->front())->bombCoolDown;
+  int coolDown = static_cast<Player *>(Game::getInstance()->getEntities()->front())->bombCoolDown;
   int backwardsIndex = coolDown * (float)NR_OF_CD_FRAMES / (float)FULL_COOLDOWN;
   int spriteNr = std::max(0, NR_OF_CD_FRAMES - 1 - backwardsIndex);
   anim.sprite.setTextureRect(anim.frames[spriteNr]);
@@ -99,60 +34,6 @@ void coolDownAnimation::draw(sf::RenderWindow &app)
 {
   anim.sprite.setPosition(this->x, this->y);
   app.draw(anim.sprite);
-}
-
-player::player()
-{
-  name = "player";
-  tilting = "nope";
-  bombCoolDown = 0;
-}
-
-void player::update()
-{
-  if (bombCoolDown > 0)
-    bombCoolDown -= 1;
-
-  if (thrust)
-  {
-    dx += cos(angle * DEGTORAD) * 0.2;
-    dy += sin(angle * DEGTORAD) * 0.2;
-  }
-  else if (brake)
-  {
-    dx *= 0.95;
-    dy *= 0.95;
-  }
-  else
-  {
-    dx *= 0.99;
-    dy *= 0.99;
-  }
-
-  //sprite.setTextureRect(frames[(int)frameNumber]);
-
-  int maxSpeed = 15;
-  float speed = sqrt(dx * dx + dy * dy);
-  if (speed > maxSpeed)
-  {
-    dx *= maxSpeed / speed;
-    dy *= maxSpeed / speed;
-  }
-
-  x += dx;
-  y += dy;
-
-  int W = Game::getInstance()->getWidth();
-  int H = Game::getInstance()->getHeight();
-
-  if (x > W)
-    x = 0;
-  if (x < 0)
-    x = W;
-  if (y > H)
-    y = 0;
-  if (y < 0)
-    y = H;
 }
 
 Game *Game::getInstance()

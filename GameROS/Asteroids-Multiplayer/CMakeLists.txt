@@ -9,4 +9,4 @@ include_directories(lib
 add_executable(Asteroids_Multiplayer
         src/classes.cpp
         src/helping_functions.cpp
-        main.cpp src/Asteroid.cpp lib/Asteroid.h src/Bullet.cpp lib/Bullet.h src/Bomb.cpp lib/Bomb.h src/Player.cpp lib/Player.h)
+        main.cpp src/Asteroid.cpp lib/Asteroid.h src/Bullet.cpp lib/Bullet.h src/Bomb.cpp lib/Bomb.h src/Player.cpp lib/Player.h src/Animation.cpp lib/Animation.h src/Entity.cpp lib/Entity.h)

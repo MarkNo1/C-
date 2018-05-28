@@ -88,6 +88,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/lib/Animation.h">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
 		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/lib/Asteroid.h">
 			<Option target="Asteroids_Multiplayer"/>
 		</Unit>
@@ -97,10 +100,16 @@
 		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/lib/Bullet.h">
 			<Option target="Asteroids_Multiplayer"/>
 		</Unit>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/lib/Entity.h">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
 		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/lib/Player.h">
 			<Option target="Asteroids_Multiplayer"/>
 		</Unit>
 		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/main.cpp">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Animation.cpp">
 			<Option target="Asteroids_Multiplayer"/>
 		</Unit>
 		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Asteroid.cpp">
@@ -110,6 +119,9 @@
 			<Option target="Asteroids_Multiplayer"/>
 		</Unit>
 		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Bullet.cpp">
+			<Option target="Asteroids_Multiplayer"/>
+		</Unit>
+		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Entity.cpp">
 			<Option target="Asteroids_Multiplayer"/>
 		</Unit>
 		<Unit filename="/home/jrebocho/github/C-/GameROS/Asteroids-Multiplayer/src/Player.cpp">

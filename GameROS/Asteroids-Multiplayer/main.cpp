@@ -6,6 +6,7 @@
 #include "lib/Asteroid.h"
 #include "lib/Bullet.h"
 #include "lib/Bomb.h"
+#include "lib/Player.h"
 
 #include <iostream>
 
@@ -30,7 +31,7 @@ int main()
   t8.loadFromFile("images/explosions/type_D.png");
   t9.loadFromFile("images/bombCoolDown.png");
 
-  t10.loadFromFile("images/fire_red.png");              //2nd player bullets
+  t10.loadFromFile("images/fire_red.png");              //2nd Player bullets
   t11.loadFromFile("images/spaceship.png");
 
   t1.setSmooth(true);
@@ -62,12 +63,12 @@ int main()
 
     spawnAsteroids(0, sRock);
 
-  player *p = new player();
+  Player *p = new Player();
   p->set_state(200, 200, 0, 20);
   p->set_animation(sPlayer);
   Game::getInstance()->getEntities()->push_back(p);
 
-    player *p2 = new player();
+    Player *p2 = new Player();
     p2->set_state(200, 200, 0, 20);
     p2->set_animation(sPlayer2);
     Game::getInstance()->getEntities()->push_back(p2);
@@ -104,7 +105,7 @@ int main()
           }
         }
 
-            //2nd player bullets
+            //2nd Player bullets
         else if (event.key.code == Keyboard::O)
         {
             Bullet *b = new Bullet();
@@ -200,7 +201,7 @@ int main()
               }
           }
 
-        if (a->name == "player" && b->name == "asteroid")
+        if (a->name == "Player" && b->name == "asteroid")
           if (isCollide(a, b))
           {
             b->life = false;

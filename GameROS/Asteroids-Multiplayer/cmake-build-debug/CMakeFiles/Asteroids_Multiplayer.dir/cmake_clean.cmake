@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Asteroids_Multiplayer.dir/src/Bullet.cpp.o"
   "CMakeFiles/Asteroids_Multiplayer.dir/src/Bomb.cpp.o"
   "CMakeFiles/Asteroids_Multiplayer.dir/src/Player.cpp.o"
+  "CMakeFiles/Asteroids_Multiplayer.dir/src/Animation.cpp.o"
+  "CMakeFiles/Asteroids_Multiplayer.dir/src/Entity.cpp.o"
   "Asteroids_Multiplayer.pdb"
   "Asteroids_Multiplayer"
 )
